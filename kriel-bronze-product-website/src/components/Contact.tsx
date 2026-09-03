@@ -23,7 +23,7 @@ export default function Contact() {
     const text = encodeURIComponent(
       `Përshëndetje Kriel! Unë jam ${form.name || "—"} (${form.phone || "—"}). ${form.msg || "Dëshiroj informacion mbi produktet Caggiati."}`
     );
-    window.open(`https://wa.me/355692060060?text=${text}`, "_blank");
+    window.open(`https://wa.me/355692031315?text=${text}`, "_blank");
   };
 
   return (
@@ -48,10 +48,10 @@ export default function Contact() {
           {/* info cards */}
           <div className="lg:col-span-2 flex flex-col gap-4">
             {[
-              { icon: Phone, k: "Telefoni", v: "+355 69 20 60 060", href: "tel:+355692060060" },
-              { icon: Mail, k: "Email", v: "info@kriel.al", href: "mailto:info@kriel.al" },
-              { icon: MapPin, k: "Adresa", v: "Rruga e Kavajës, Tiranë, Shqipëri", href: "https://maps.google.com/?q=Rruga+e+Kavajes,+Tirane" },
-              { icon: Clock, k: "Orari", v: "E hënë – E shtunë · 08:00 – 17:00" },
+              { icon: Phone, k: "Telefoni", v: "+355 69 20 31 315", href: "tel:+355692031315" },
+              { icon: Mail, k: "Email", v: "infokrielshpk@kriel.com", href: "mailto:infokrielshpk@kriel.com" },
+              { icon: MapPin, k: "Adresa", v: "Rruga Taxhedin Baholli Nr. 21, Tiranë 1008, Albania", href: "https://maps.app.goo.gl/tMV54tAx5yJRntcF6" },
+              { icon: Clock, k: "Orari", v: "E martë – E dielë · 08:00 – 14:00" },
             ].map((c, i) => (
               <Reveal key={c.k} delay={0.1 + i * 0.06}>
                 <a
