@@ -58,11 +58,11 @@ export default function Header() {
 
           <div className="flex items-center gap-2">
             <a
-              href="tel:+355692060060"
+              href="tel:+355692031315"
               className="hidden sm:inline-flex items-center gap-2 rounded-full border border-bronze/40 px-4 py-2 text-[12px] font-semibold tracking-wide text-bronze hover:bg-bronze hover:text-ink transition-all duration-300"
             >
               <Phone size={14} strokeWidth={2.2} />
-              +355 69 20 60 060
+              +355 69 20 31 315
             </a>
             <button
               onClick={() => setOpen(true)}
@@ -122,7 +122,7 @@ export default function Header() {
               className="px-8 pb-10"
             >
               <a
-                href="tel:+355692060060"
+                href="tel:+355692031315"
                 className="flex items-center justify-center gap-2.5 w-full rounded-full bg-gradient-to-r from-[#ecd9a8] via-bronze to-bronze-2 py-4 text-ink font-bold text-[15px] tracking-wide"
               >
                 <Phone size={17} strokeWidth={2.4} />
