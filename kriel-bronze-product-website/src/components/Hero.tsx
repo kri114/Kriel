@@ -32,7 +32,7 @@ export default function Hero() {
         >
           <span className="w-1.5 h-1.5 rounded-full bg-bronze animate-pulse" />
           <span className="text-[10.5px] sm:text-[11.5px] font-semibold tracking-[0.26em] uppercase text-ivory-2">
-            Shpërndarës zyrtar <span className="text-bronze">Caggiati</span> · Parma, Itali
+            Shpërndarës zyrtar <span className="text-bronze">Caggiati</span> · Colorno, Itali
           </span>
         </motion.div>
 
@@ -47,7 +47,7 @@ export default function Hero() {
               >
                 {line === "që i bën nder" ? (
                   <>
-                    që i bën nder <em className="text-bronze-grad not-italic font-semibold">kujtimit</em>.
+                    I japim vlerë <em className="text-bronze-grad not-italic font-semibold">emocioneve</em> tuaja.
                   </>
                 ) : (
                   line
@@ -64,7 +64,7 @@ export default function Hero() {
           className="mt-5 max-w-xl text-[15px] sm:text-[16.5px] leading-relaxed text-ivory-2/90 font-light"
         >
           Statuja, kryqe, llampa dhe kompozime përkujtimore origjinale nga fonderia
-          Caggiati — mjeshtëri italiane që ruajt historitë e të dashurve tuaj, bukuri
+          Caggiati — mjeshtëri italiane që ruan historitë e të dashurve tuaj, bukuri
           që i bën ballë kohës.
         </motion.p>
 
