@@ -8,19 +8,14 @@ export type Product = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'statue', name: 'Statuja Bronzi', desc: 'Statuja të farkëtuara me teknikën e dyllit të humbur, me finitim Diamond Shield — detaje të gjalla që i bëjnë nder kujtimit.', cover: '/products/statue/statue-02-000.jpg' },
-  { id: 'kryqe', name: 'Kryqe & Kryqëzime', desc: 'Kryqe dhe kryqëzime në bronz të shkrirë: nga linjat klasike te format moderne, simbol i përjetshëm i besimit.', cover: '/products/kryqe/kryqe-02-000.jpg' },
-  { id: 'targa', name: 'Targa & Bazorelieva', desc: 'Targa përkujtimore dhe bazorelieva të shenjta, të gdhendura me mjeshtëri për loculi dhe monumente.', cover: '/products/targa/targa-02-000.jpg' },
-  { id: 'seri', name: 'Koleksione Moderne', desc: 'Seri Pressofusione: vazo, korniza, kryqe dhe llampa në ngjyra moderne me dizajn bashkëkohor.', cover: '/products/seri/seri-11-022.jpg' },
-  { id: 'shell', name: 'Koleksione Klasike', desc: 'Seri Shell Moulding: bronz klasik me patinë të gjelbër dhe qelq të kuq, elegancë e përjetshme.', cover: '/products/shell/shell-02-003.jpg' },
-  { id: 'lule', name: 'Lule Bronzi', desc: 'Lule të punuara dorë nga dorë në bronz: trëndafinj, kala, zambakë dhe degë që nuk thahen kurrë.', cover: '/products/lule/lule-16-042.jpg' },
-  { id: 'llampa', name: 'Llampa Qirinjsh', desc: 'Llampa tradicionale qirinjsh për varreze, me qelq të kuq dhe korniza bronzi të thata.', cover: '/products/llampa/llampa-02-004.jpg' },
-  { id: 'ndricim', name: 'Ndriçim & Kristale', desc: 'Trëndafinj porselani Capodimonte dhe kristale drite që ndriçojnë kujtimin çdo mbrëmje.', cover: '/products/ndricim/ndricim-03-008.jpg' },
-  { id: 'korniza', name: 'Korniza', desc: 'Korniza bronzi për fotokujtime — ovale, drejtkëndore dhe moderne, me patinë artistike.', cover: '/products/korniza/korniza-01-000.jpg' },
-  { id: 'urna', name: 'vazo', desc: 'vazo moderne dhe klasike për hirin e të dashurve, në ngjyra dhe materiale të përzgjedhura.', cover: '/products/urna/urna-07-001.jpg' },
-  { id: 'libra', name: 'Libra & Pergamena', desc: 'Libra, zemra dhe pergamena bronzi për dedikime dhe epitafe me klas.', cover: '/products/libra/libra-03-005.jpg' },
-  { id: 'mozaik', name: 'Mozaike', desc: 'Panele mozaiku me lule dhe kristale, një prekje arti që zgjat brezash.', cover: '/products/mozaik/mozaik-02-003.jpg' },
-  { id: 'preziosi', name: 'I Preziosi — Ar 24kt', desc: 'Koleksioni më i çmuar: bronz i veshur me ar 24 karat, shkëlqim i përjetshëm.', cover: '/products/preziosi/preziosi-02-000.jpg' },
+  { id: 'germa', name: 'Gërma', cover: '/products/statue/statue-02-000.jpg' },
+  { id: 'korniza', name: 'Korniza Bronzi', cover: '/products/kryqe/kryqe-02-000.jpg' },
+  { id: 'kryqe', name: 'Kryqe Bronzi', cover: '/products/targa/targa-02-000.jpg' },
+  { id: 'lule', name: 'Lule Bronzi', cover: '/products/seri/seri-11-022.jpg' },
+  { id: 'mbajtese', name: 'Mbajtëse Qirinjsh', cover: '/products/shell/shell-02-003.jpg' },
+  { id: 'vazo', name: 'Vazo Lulsh', cover: '/products/lule/lule-16-042.jpg' },
+  { id: 'statuja', name: 'Statuja Bronzi', cover: '/products/llampa/llampa-02-004.jpg' },
+  { id: 'targa', name: 'Targa Bronzi', cover: '/products/ndricim/ndricim-03-008.jpg' },
 ];
 
 export const PRODUCTS: Product[] = [
