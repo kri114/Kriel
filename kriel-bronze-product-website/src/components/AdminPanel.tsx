@@ -131,7 +131,7 @@ function LoginView({ onDone }: { onDone: () => void }) {
       setErr("");
       onDone();
     } else {
-      setErr("Përdoruesi ose fjalëkalimi nuk është i saktë.");
+      setErr("E ke fut gabim o pall.");
     }
   };
 
