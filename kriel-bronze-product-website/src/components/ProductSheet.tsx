@@ -115,7 +115,7 @@ export default function ProductSheet({
                     Telefononi
                   </a>
                   <a
-                    href={`https://wa.me/355692060060?text=${waText}`}
+                    href={`https://wa.me/355692031315?text=${waText}`}
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#ecd9a8] via-bronze to-bronze-2 py-3.5 text-[13.5px] font-bold text-ink"
