@@ -8,9 +8,9 @@ export type Product = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'germa', name: 'Gërma', cover: 'https://www.caggiati.it/wp-content/uploads/2017/07/LETTERE-BRONZO-COMPOSIZIONE-SU-LOCULO-min-768x624.jpg' },
-  { id: 'korniza', name: 'Korniza Bronzi', cover: '/products/kryqe/kryqe-02-000.jpg' },
-  { id: 'kryqe', name: 'Kryqe Bronzi', cover: '/products/targa/targa-02-000.jpg' },
+  { id: 'germa', name: 'Gërma', cover: 'https://www.caggiati.it/wp-content/uploads/2017/05/Mundial.jpg' },
+  { id: 'korniza', name: 'Korniza Bronzi', cover: 'https://www.caggiati.it/wp-content/uploads/2017/07/LETTERE-BRONZO-COMPOSIZIONE-SU-LOCULO-min-768x624.jpg' },
+  { id: 'kryqe', name: 'Kryqe Bronzi', cover: 'https://www.krzemex.pl/wp-content/uploads/2024/06/c23145_0.jpg' },
   { id: 'lule', name: 'Lule Bronzi', cover: '/products/seri/seri-11-022.jpg' },
   { id: 'mbajtese', name: 'Mbajtëse Qirinjsh', cover: '/products/shell/shell-02-003.jpg' },
   { id: 'vazo', name: 'Vazo Lulsh', cover: '/products/lule/lule-16-042.jpg' },
