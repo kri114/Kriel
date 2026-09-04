@@ -3,5 +3,5 @@
 // Ndryshoni përdoruesin / fjalëkalimin këtu, pastaj ribëni build.
 // Paneli sekret hapet vetëm me adresën:  juaj-faqja/#kriel-admin
 // ─────────────────────────────────────────────────────────────
-export const ADMIN_USERNAME = "admin";
-export const ADMIN_PASSWORD = "kriel2025";
+export const ADMIN_USERNAME = "Krieladmin";
+export const ADMIN_PASSWORD = "kriel26-27";
