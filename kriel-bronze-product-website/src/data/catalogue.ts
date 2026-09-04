@@ -8,14 +8,14 @@ export type Product = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'germa', name: 'Gërma', cover: 'https://www.caggiati.it/wp-content/uploads/2017/05/Mundial.jpg' },
-  { id: 'korniza', name: 'Korniza Bronzi', cover: 'https://www.caggiati.it/wp-content/uploads/2017/07/LETTERE-BRONZO-COMPOSIZIONE-SU-LOCULO-min-768x624.jpg' },
-  { id: 'kryqe', name: 'Kryqe Bronzi', cover: 'https://www.krzemex.pl/wp-content/uploads/2024/06/c23145_0.jpg' },
-  { id: 'lule', name: 'Lule Bronzi', cover: 'https://www.caggiati.it/wp-content/uploads/2017/07/ROSE-DECORATE-A-MANO-PRESSOFUSIONE-edit-3.jpg' },
+  { id: 'germa', name: 'Gërma', cover: 'https://i.pinimg.com/1200x/38/5c/37/385c37cdefcbf9aab24e2a0d29f51b5d.jpg' },
+  { id: 'korniza', name: 'Korniza Bronzi', cover: 'https://i.pinimg.com/736x/65/3d/1a/653d1a0363670110a57559598b70d4ef.jpg' },
+  { id: 'kryqe', name: 'Kryqe Bronzi', cover: 'https://i.pinimg.com/1200x/08/1f/48/081f48942c6e55afff484630c5ba842a.jpg' },
+  { id: 'lule', name: 'Lule Bronzi', cover: 'https://i.pinimg.com/1200x/69/52/a3/6952a3934e198ba0115c326bf7726df0.jpg' },
   { id: 'mbajtese', name: 'Mbajtëse Qirinjsh', cover: 'https://www.caggiati.it/wp-content/uploads/2017/07/05-Lampade-a-Cero.jpg' },
   { id: 'vazo', name: 'Vazo Lulsh', cover: 'https://www.caggiati.it/wp-content/uploads/2017/04/olimpia_slide_1.jpg' },
-  { id: 'statuja', name: 'Statuja Bronzi', cover: 'https://www.caggiati.it/wp-content/uploads/2017/07/statua-angelo-comp-4.jpg' },
-  { id: 'targa', name: 'Targa Bronzi', cover: 'https://www.caggiati.it/wp-content/uploads/2023/05/08-1-Amicizia-Mani-Giunte.png' },
+  { id: 'statuja', name: 'Statuja Bronzi', cover: 'https://i.pinimg.com/1200x/73/f1/f4/73f1f4234bab214beb503d15372a18eb.jpg' },
+  { id: 'targa', name: 'Targa Bronzi', cover: 'https://i.pinimg.com/1200x/ed/4a/9e/ed4a9e12b93bd4ee0f13d834f4bba57a.jpg' },
 ];
 
 export const PRODUCTS: Product[] = [
