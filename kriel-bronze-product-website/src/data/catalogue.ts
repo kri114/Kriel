@@ -8,7 +8,7 @@ export type Product = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'germa', name: 'Gërma', cover: '/products/statue/statue-02-000.jpg' },
+  { id: 'germa', name: 'Gërma', cover: 'https://www.caggiati.it/wp-content/uploads/2017/05/Mundial.jpg' },
   { id: 'korniza', name: 'Korniza Bronzi', cover: '/products/kryqe/kryqe-02-000.jpg' },
   { id: 'kryqe', name: 'Kryqe Bronzi', cover: '/products/targa/targa-02-000.jpg' },
   { id: 'lule', name: 'Lule Bronzi', cover: '/products/seri/seri-11-022.jpg' },
