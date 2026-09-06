@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #14110d;
+  --color-ink-2: #1b1712;
+  --color-ink-3: #242017;
+  --color-ivory: #f2ead9;
+  --color-ivory-2: #d8ceb8;
+  --color-bronze: #c9a35c;
+  --color-bronze-2: #a97e42;
+  --color-copper: #a97142;
+  --color-line: rgba(201, 163, 92, 0.22);
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(201, 163, 92, 0.35);
+  color: #fff8ea;
+}
+
+/* ---- film grain overlay ---- */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 90;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 9s steps(6) infinite;
+}
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-2%, 2%); }
+  40% { transform: translate(2%, -1%); }
+  60% { transform: translate(-1%, -2%); }
+  80% { transform: translate(1%, 2%); }
+}
+
+/* ---- bronze gradient text ---- */
+.text-bronze-grad {
+  background: linear-gradient(120deg, #ecd9a8 0%, #c9a35c 40%, #96682f 75%, #d9b877 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---- marquee ---- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+/* ---- chip rail scrollbar hidden ---- */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ---- product image filter to unify crops ---- */
+.card-img {
+  filter: saturate(0.92) contrast(1.02);
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s ease;
+}
+.group:hover .card-img {
+  transform: scale(1.05);
+  filter: saturate(1) contrast(1.04);
+}
+
+/* ---- sheet drag shadow ---- */
+.sheet-shadow {
+  box-shadow: 0 -30px 80px rgba(0, 0, 0, 0.65);
+}
+
+/* ---- hairline divider ---- */
+.hairline {
+  background: linear-gradient(90deg, transparent, rgba(201, 163, 92, 0.4), transparent);
+  height: 1px;
+}
+
+/* ---- input focus ---- */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: rgba(201, 163, 92, 0.6) !important;
+}
+
+/* ---- slow spin for ornament ---- */
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+.spin-slow { animation: spin-slow 40s linear infinite; }
+
+/* ---- soft float ---- */
+@keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.floaty { animation: floaty 6s ease-in-out infinite; }
+
+/* ---- shimmer for the "Më të pëlqyerat" badge ---- */
+@keyframes badge-shine {
+  0% { transform: translateX(-120%) skewX(-18deg); }
+  60%, 100% { transform: translateX(220%) skewX(-18deg); }
+}
+.badge-shine::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 45%;
+  background: linear-gradient(90deg, transparent, rgba(236, 217, 168, 0.22), transparent);
+  animation: badge-shine 3.8s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(201, 163, 92, 0.28); }
+  50% { box-shadow: 0 0 26px 4px rgba(201, 163, 92, 0.14); }
+}
+.badge-glow { animation: glow-pulse 3.8s ease-in-out infinite; }
