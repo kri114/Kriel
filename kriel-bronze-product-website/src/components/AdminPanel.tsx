@@ -411,7 +411,6 @@ function ProductRow({ p, expanded, onToggle }: { p: Product; expanded: boolean; 
               ))}
             </select>
           </label>
-          
           {deleted ? (
             <button
               onClick={() => restoreProduct(p.id)}
