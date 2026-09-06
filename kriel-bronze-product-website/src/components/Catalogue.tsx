@@ -47,13 +47,13 @@ export default function Catalogue({
           <Reveal><Eyebrow>Katalogu 2025</Eyebrow></Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-4 font-display text-4xl sm:text-[52px] font-medium leading-[1.02] text-ivory">
-              Çdo vepër, me <em className="text-bronze-grad not-italic font-semibold">çmim të qartë</em>
+              Çdo vepër, me <em className="text-bronze-grad not-italic font-semibold">çmimin përkatës</em>
             </h2>
           </Reveal>
           <Reveal delay={0.14}>
             <p className="mx-auto mt-4 max-w-xl text-[14.5px] leading-relaxed text-ivory-2/80 font-light">
               Të dhënat dhe fotografitë janë marrë nga katalogu zyrtar Caggiati.
-              Çmimet janë orientuese, me TVSH të përfshirë.
+              Çmimet janë me TVSH të përfshirë.
             </p>
           </Reveal>
         </div>
@@ -93,6 +93,81 @@ export default function Catalogue({
           </div>
         </Reveal>
 
+        {/* Large featured card (the owner's pick) */}
+function FeaturedCard({ p, onOpen, i }: { p: Product; onOpen: (p: Product) => void; i: number }) {
+  return (
+    <motion.button
+      layout
+      onClick={() => onOpen(p)}
+      initial={{ opacity: 0, y: 26 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-4% 0px" }}
+      transition={{ duration: 0.7, delay: i * 0.09, ease: EASE }}
+      className="group relative overflow-hidden rounded-[22px] border border-bronze/25 bg-ink-2 text-left transition-all duration-500 hover:border-bronze/60 hover:shadow-[0_20px_50px_rgba(0,0,0,0.55)]"
+    >
+      <div className="relative aspect-[4/4.2] overflow-hidden">
+        <ProductImage src={p.img} alt={p.name} code={p.code} imgClassName="card-img" />
+        <span className="absolute left-3.5 top-3.5 inline-flex items-center gap-1.5 rounded-full border border-bronze/40 bg-ink/70 px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.2em] text-bronze backdrop-blur-sm">
+          <Sparkles size={10} strokeWidth={2.4} /> E përzgjedhur
+        </span>
+        <span className="absolute bottom-3.5 right-3.5 flex h-9 w-9 translate-y-1.5 items-center justify-center rounded-full bg-bronze text-ink opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
+          <ChevronRight size={16} strokeWidth={2.6} />
+        </span>
+      </div>
+      <div className="px-4 pb-4 pt-3.5 sm:px-5">
+        <h3 className="line-clamp-1 font-display text-[19px] font-semibold leading-snug text-ivory">
+          {p.name}
+        </h3>
+        {p.code ? (
+          <p className="mt-0.5 truncate text-[10.5px] font-medium uppercase tracking-[0.16em] text-ivory-2/50">
+            {p.code}
+          </p>
+        ) : null}
+        <div className="mt-2 flex items-center justify-between">
+          <span className="text-[17px] font-bold tracking-wide text-bronze-grad">
+            {fmtPrice(p.price)}
+          </span>
+          <span className="text-[9.5px] uppercase tracking-[0.18em] text-ivory-2/50">ME TVSH</span>
+        </div>
+      </div>
+    </motion.button>
+  );
+}
+
+        {/* The catalog — FEATURE: 3 owner picks + progressive */}
+export default function Catalog({
+  group,
+  setGroup,
+  onOpen,
+}: {
+  group: string;
+  setGroup: (g: string) => void;
+  onOpen: (p: Product) => void;
+}) {
+  const { products, featuredIds } = useAdmin();
+  const [query, setQuery] = useState("");
+  const [sort, setSort] = useState<"def" | "asc" | "desc">("def");
+  const [revealed, setRevealed] = useState(0); // sa grupe kategorie të zbuluara
+
+  // Produktet e përzgjedhura nga pronari (3)
+  const featuredSet = useMemo(() => new Set(featuredIds), [featuredIds]);
+  const featured = useMemo(
+    () => featuredIds.map((id) => products.find((p) => p.id === id)).filter(Boolean) as Product[],
+    [featuredIds, products]
+  );
+
+  // Grupet sipas RENDIT TË KATEGORIVE — "germa" e para; boshat kalohen
+  const groups = useMemo(
+    () =>
+      GROUP_ORDER.map((g) => ({
+        ...g,
+        items: products.filter((p) => g.cats.includes(p.cat) && !featuredSet.has(p.id)),
+      })).filter((g) => g.items.length > 0),
+    [products, featuredSet]
+  );
+
+  const searching = query.trim() !== "";
+  const filtering = group !== "all" || searching || sort !== "def";
         {/* result meta */}
         <div className="mt-6 flex items-baseline justify-between px-1">
           <p className="text-[11.5px] tracking-[0.22em] uppercase text-ivory-2/60">
