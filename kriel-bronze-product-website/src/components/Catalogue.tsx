@@ -94,7 +94,7 @@ export default function Catalogue({
         </Reveal>
 
         {/* Large featured card (the owner's pick) */}
-function FeaturedCard({ p, onOpen, i } { p: Product; onOpen: (p: Product) => void; i: number }) {
+function FeaturedCard({ p, onOpen, i }: { p: Product; onOpen: (p: Product) => void; i: number } {
   return (
     <motion.button
       layout
