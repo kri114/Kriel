@@ -18,6 +18,15 @@ export const CATEGORIES: Category[] = [
   { id: "targa", name: "Targa Bronzi", cover: "https://i.pinimg.com/1200x/ed/4a/9e/ed4a9e12b93bd4ee0f13d834f4bba57a.jpg", order: 8 },
 ];
 
+// ── ★ THE 3 FEATURED PRODUCTS ( owner's choice ) ─────────────
+// Ndryshoni ID-të këtu, ose përdorni panelin e administratorit
+// (#kriel-admin) për t'i zgjedhur pa prekur kodin.
+export const FEATURED_IDS: string[] = [
+  "statue-35-264_61",   // Madonna me duar të bashkuara
+  "kryqe-23-533_20",    // Kryq modern i artë
+  "llampa-10-180_19",   // Llambë qiriu
+];
+
 export const PRODUCTS: Product[] = [
   { id: 'statue-35-264_61', cat: 'statue', name: 'Madonna me duar të bashkuara', code: 'COD. 35 264/61', price: 402.9, dims: 'Lartësia 63 cm', mat: 'Bronz 87 — patinë artistike', img: '/products/statue/statue-02-000.jpg' },
   { id: 'statue-35-082_26', cat: 'statue', name: 'Madonna në lutje', code: 'COD. 35 082/26', price: 210.9, dims: 'Lartësia 26 cm', mat: 'Bronz 87 — patinë artistike', img: '/products/statue/statue-02-005.jpg' },
