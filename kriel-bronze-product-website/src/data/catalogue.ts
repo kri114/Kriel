@@ -8,7 +8,7 @@ export type Product = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'statue', name: 'Statuja Bronzi',
+  { id: 'statue', name: 'Statuja Bronzi', cover: '/products/ndricim/ndricim-03-008.jpg' },
   { id: 'kryqe', name: 'Kryqe & Kryqëzime', desc: 'Kryqe dhe kryqëzime në bronz të shkrirë: nga linjat klasike te format moderne, simbol i përjetshëm i besimit.', cover: '/products/kryqe/kryqe-02-000.jpg' },
   { id: 'targa', name: 'Targa & Bazorelieva', desc: 'Targa përkujtimore dhe bazorelieva të shenjta, të gdhendura me mjeshtëri për loculi dhe monumente.', cover: '/products/targa/targa-02-000.jpg' },
   { id: 'seri', name: 'Koleksione Moderne', desc: 'Seri Pressofusione: vazo, korniza, kryqe dhe llampa në ngjyra moderne me dizajn bashkëkohor.', cover: '/products/seri/seri-11-022.jpg' },
