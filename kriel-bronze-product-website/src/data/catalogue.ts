@@ -8,14 +8,14 @@ export type Product = {
 };
 
 export const CATEGORIES: Category[] = [
-  { id: 'statue', name: 'Statuja Bronzi', cover: '/products/ndricim/ndricim-03-008.jpg' },
-  { id: 'kryqe', name: 'Kryqe & Kryqëzime', desc: 'Kryqe dhe kryqëzime në bronz të shkrirë: nga linjat klasike te format moderne, simbol i përjetshëm i besimit.', cover: '/products/kryqe/kryqe-02-000.jpg' },
-  { id: 'targa', name: 'Targa & Bazorelieva', desc: 'Targa përkujtimore dhe bazorelieva të shenjta, të gdhendura me mjeshtëri për loculi dhe monumente.', cover: '/products/targa/targa-02-000.jpg' },
-  { id: 'seri', name: 'Koleksione Moderne', desc: 'Seri Pressofusione: vazo, korniza, kryqe dhe llampa në ngjyra moderne me dizajn bashkëkohor.', cover: '/products/seri/seri-11-022.jpg' },
-  { id: 'shell', name: 'Koleksione Klasike', desc: 'Seri Shell Moulding: bronz klasik me patinë të gjelbër dhe qelq të kuq, elegancë e përjetshme.', cover: '/products/shell/shell-02-003.jpg' },
-  { id: 'lule', name: 'Lule Bronzi', desc: 'Lule të punuara dorë nga dorë në bronz: trëndafinj, kala, zambakë dhe degë që nuk thahen kurrë.', cover: '/products/lule/lule-16-042.jpg' },
-  { id: 'llampa', name: 'Llampa Qirinjsh', desc: 'Llampa tradicionale qirinjsh për varreze, me qelq të kuq dhe korniza bronzi të thata.', cover: '/products/llampa/llampa-02-004.jpg' },
-  { id: 'ndricim', name: 'Ndriçim & Kristale', desc: 'Trëndafinj porselani Capodimonte dhe kristale drite që ndriçojnë kujtimin çdo mbrëmje.', cover: '/products/ndricim/ndricim-03-008.jpg' },
+   { id: "germa", name: "Gërma", cover: "https://i.pinimg.com/1200x/38/5c/37/385c37cdefcbf9aab24e2a0d29f51b5d.jpg", order: 1 },
+  { id: "korniza", name: "Korniza Bronzi", cover: "https://i.pinimg.com/736x/65/3d/1a/653d1a0363670110a57559598b70d4ef.jpg", order: 2 },
+  { id: "kryqe", name: "Kryqe Bronzi", cover: "https://i.pinimg.com/1200x/08/1f/48/081f48942c6e55afff484630c5ba842a.jpg", order: 3 },
+  { id: "lule", name: "Lule Bronzi", cover: "https://i.pinimg.com/1200x/69/52/a3/6952a3934e198ba0115c326bf7726df0.jpg", order: 4 },
+  { id: "mbajtese", name: "Mbajtëse Qirinjsh", cover: "https://www.caggiati.it/wp-content/uploads/2017/07/05-Lampade-a-Cero.jpg", order: 5 },
+  { id: "vazo", name: "Vazo Lulsh", cover: "https://www.caggiati.it/wp-content/uploads/2017/04/olimpia_slide_1.jpg", order: 6 },
+  { id: "statuja", name: "Statuja Bronzi", cover: "https://i.pinimg.com/1200x/73/f1/f4/73f1f4234bab214beb503d15372a18eb.jpg", order: 7 },
+  { id: "targa", name: "Targa Bronzi", cover: "https://i.pinimg.com/1200x/ed/4a/9e/ed4a9e12b93bd4ee0f13d834f4bba57a.jpg", order: 8 },
 ];
 
 export const PRODUCTS: Product[] = [
