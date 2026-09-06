@@ -32,8 +32,8 @@ export default function Categories({ onPick, products }: { onPick: (cat: string)
             </Reveal>
             <Reveal delay={0.14}>
               <p className="mt-4 max-w-xl text-[14.5px] leading-relaxed text-ivory-2/80 font-light">
-                E gjithë gama Caggiati e organizuar sipas llojit — nga statujat
-                monumentale te detajet më të vogla të bronzit.
+                E gjithë gama Caggiati e organizuar sipas llojit — nga detajet më të vogla të bronzit tek statujat
+                monumentale .
               </p>
             </Reveal>
           </div>
