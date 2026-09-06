@@ -397,7 +397,21 @@ function ProductRow({ p, expanded, onToggle }: { p: Product; expanded: boolean; 
               className="w-full rounded-xl border border-line bg-ink-3/60 px-3.5 py-2.5 text-[13.5px] text-ivory"
             />
           </label>
-
+          <label className="block">
+            <span className="mb-1 block text-[10px] tracking-[0.2em] uppercase text-ivory-2/60">Kategoria</span>
+            <select
+              value={p.cat}
+              onChange={(e) => updateProduct(p.id, { cat: e.target.value })}
+              className="w-full rounded-xl border border-line bg-ink-3/60 px-3.5 py-2.5 text-[13.5px] text-ivory"
+            >
+              {CATEGORIES.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          
           {deleted ? (
             <button
               onClick={() => restoreProduct(p.id)}
