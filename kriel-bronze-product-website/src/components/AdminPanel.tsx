@@ -285,7 +285,7 @@ function ProductRow({ p, expanded, onToggle }: { p: Product; expanded: boolean; 
         <span className="flex-1 min-w-0">
           <span className="block text-[14px] font-semibold text-ivory truncate">{p.name}</span>
           <span className="block text-[11px] text-ivory-2/60 truncate">
-            {p.code.replace("COD. ", "")} · {fmtEUR(p.price)}
+            {CATEGORIES.find((c) => c.id === p.cat)?.name || p.cat} · {fmtEUR(p.price)}
             {hasCustomImg && <span className="text-bronze"> · foto e re</span>}
             {deleted && <span className="text-red-400"> · e fshehur</span>}
           </span>
