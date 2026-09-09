@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://kriel.al",
+    canonical: "http://kriel.al",
   },
 };
 
