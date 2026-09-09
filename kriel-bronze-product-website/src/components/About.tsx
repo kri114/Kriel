@@ -18,17 +18,17 @@ export default function About() {
             përkujtim — statuja, kryqe, korniza, lule, vazo, targa dhe gërma të personalizuara.
             Çdo produkt zgjidhet dhe kontrollohet me kujdes, për t&apos;i dhënë familjes tuaj një
             simbol dinjitoz dhe të qëndrueshëm në kohë. Ne jemi më të mirët në treg për punimin e:
-    "Aksesore Bronzi",
+    "Aksesorë Bronzi",
     "Artikuj Bronzi",
-    "Aksesore per varre",
-    "Artikuj per varre",
-    "Germa per varre",
-    "Korniza per varre",
-    "Kryqe per varre",
+    "Aksesorë për varre",
+    "Artikuj për varre",
+    "Gërma për varre",
+    "Korniza për varre",
+    "Kryqe për varre",
     "Vend qiriu",
     "Vazo lulesh",
     "Materiale mermeri dhe graniti",
-    "Ngjites mermeri dhe graniti",
+    "Ngjitës mermeri dhe graniti",
     "Gur lucidimi mermer granit",
     "Disk mermer granit".
           </p>
