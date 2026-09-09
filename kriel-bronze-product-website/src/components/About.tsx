@@ -17,7 +17,20 @@ export default function About() {
             Jemi një ekip i përkushtuar që sjell krijime origjinale në bronz për kujtim dhe
             përkujtim — statuja, kryqe, korniza, lule, vazo, targa dhe gërma të personalizuara.
             Çdo produkt zgjidhet dhe kontrollohet me kujdes, për t&apos;i dhënë familjes tuaj një
-            simbol dinjitoz dhe të qëndrueshëm në kohë.
+            simbol dinjitoz dhe të qëndrueshëm në kohë. Ne jemi më të mirët në treg për punimin e:
+    "Aksesore Bronzi",
+    "Artikuj Bronzi",
+    "Aksesore per varre",
+    "Artikuj per varre",
+    "Germa per varre",
+    "Korniza per varre",
+    "Kryqe per varre",
+    "Vend qiriu",
+    "Vazo lulesh",
+    "Materiale mermeri dhe graniti",
+    "Ngjites mermeri dhe graniti",
+    "Gur lucidimi mermer granit",
+    "Disk mermer granit".
           </p>
         </Reveal>
       </div>
