@@ -29,17 +29,29 @@ body {
 
 /* Form controls inherit the (light, ivory) body color via the CSS preflight,
    which makes typed text unreadable on the admin panel's white inputs.
-   Default them to a dark, distinct ink — every storefront input already sets
-   its own light color utility (text-ivory), which wins over this rule. */
-input,
-textarea,
-select {
-  color: #ffffff;
+   Default them to a dark, distinct ink for the admin panel. This lives in
+   @layer base so it sits below Tailwind's utilities layer — storefront
+   inputs that set their own light color utility (text-ivory) now properly
+   override it, since layered CSS always follows normal cascade order
+   relative to other layers, while unscoped CSS here would beat utilities
+   regardless of specificity. */
+@layer base {
+  input,
+  textarea,
+  select {
+    color: #1e293b;
+  }
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: #ffffff;
+/* Admin panel placeholders (no placeholder: utility set) default to a
+   readable gray on their light inputs. Storefront placeholders set their
+   own placeholder:text-ivory-2 utility, which overrides this normally
+   since this lives in @layer base, below Tailwind's utilities layer. */
+@layer base {
+  input::placeholder,
+  textarea::placeholder {
+    color: #94a3b8;
+  }
 }
 
 ::selection {
