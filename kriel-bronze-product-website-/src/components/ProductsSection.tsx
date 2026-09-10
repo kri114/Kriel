@@ -156,7 +156,7 @@ export default function ProductsSection({
                 <select
                   value={sort}
                   onChange={(e) => setSort(e.target.value as typeof sort)}
-                  className="appearance-none rounded-full border border-line bg-ink-3/60 py-2.5 pl-8 pr-8 text-[12.5px] font-semibold text-ivory-2"
+                  className="appearance-none rounded-full border border-line bg-ink-3/60 py-2.5 pl-8 pr-8 text-[12.5px] font-semibold !text-ivory-2"
                 >
                   <option value="def">Renditja</option>
                   <option value="asc">Çmimi: ulët → lartë</option>
