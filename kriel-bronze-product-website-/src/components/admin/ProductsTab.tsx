@@ -107,7 +107,7 @@ export default function ProductsTab({
   const filtered = useMemo(() => {
     return products
       .filter((p) => (filterCat === "all" ? true : p.categoryId === Number(filterCat)))
-      .filter((p) => !q.trim() || (p.name + " " + p.code).toLowerCase().includes(q.trim().toLowerCase()))
+      .filter((p) => !q.trim() || normalizeForSearch(p.name + " " + p.code).includes(normalizeForSearch(q.trim())))
       .sort((a, b) => {
         const catA = a.categoryId ?? 999999;
         const catB = b.categoryId ?? 999999;
