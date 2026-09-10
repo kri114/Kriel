@@ -5,6 +5,7 @@ import { Search, ArrowUpDown, PackageSearch, ChevronDown, Tag } from "lucide-rea
 import { Reveal, Eyebrow } from "./Reveal";
 import ProductCard from "./ProductCard";
 import type { Category, Product } from "@/lib/types";
+import { normalizeForSearch } from "@/lib/search";
 
 const REVEAL_STEP = 6;
 
@@ -75,11 +76,12 @@ export default function ProductsSection({
   const isDefaultView = !searchActive && !catActive && sort === "def";
 
   const filteredList = useMemo(() => {
+    const queryNorm = normalizeForSearch(q.trim());
     let list = fullSorted.filter((p) => {
       const cat = categories.find((c) => c.id === p.categoryId);
       const matchesCat = activeCat === "all" || cat?.slug === activeCat;
       const matchesQ =
-        !searchActive || (p.name + " " + p.code).toLowerCase().includes(q.trim().toLowerCase());
+        !searchActive || normalizeForSearch(p.name + " " + p.code).includes(queryNorm);
       return matchesCat && matchesQ;
     });
     if (sort === "asc") list = [...list].sort((a, b) => a.price - b.price);
