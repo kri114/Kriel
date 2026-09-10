@@ -12,6 +12,7 @@ import {
   type ProductInput,
 } from "@/lib/store";
 import type { Category, Product, ProductVariant } from "@/lib/types";
+import { fmtEUR, effectivePrice } from "@/lib/constants";
 import { normalizeForSearch } from "@/lib/search";
 function showError(err: unknown) {
   alert(err instanceof Error ? err.message : "Diçka shkoi keq. Provoni përsëri.");
