@@ -126,7 +126,7 @@ export default function ProductsSection({
                   <Tag size={12} strokeWidth={2.4} /> Ofertat
                 </span>
                 <span className="hairline h-px flex-1" />
-                <span className="text-[11px] tracking-[0.14em] uppercase text-ivory-2/60">
+                <span className="text-[11px] tracking-[0.14em] uppercase text-white">
                   {saleProducts.length} {saleProducts.length === 1 ? "produkt" : "produkte"} në ulje
                 </span>
               </div>
@@ -148,7 +148,7 @@ export default function ProductsSection({
                   value={q}
                   onChange={(e) => setQ(e.target.value)}
                   placeholder="Kërko emër ose kod…"
-                  className="w-full rounded-full border border-line bg-ink-3/60 py-2.5 pl-10 pr-4 text-[13.5px] text-ivory placeholder:text-ivory-2/40 transition-colors"
+                  className="w-full rounded-full border border-line bg-ink-3/60 py-2.5 pl-10 pr-4 text-[13.5px] text-white placeholder:text-white transition-colors"
                 />
               </div>
               <div className="relative shrink-0">
@@ -156,7 +156,7 @@ export default function ProductsSection({
                 <select
                   value={sort}
                   onChange={(e) => setSort(e.target.value as typeof sort)}
-                  className="appearance-none rounded-full border border-line bg-ink-3/60 py-2.5 pl-8 pr-8 text-[12.5px] font-semibold text-ivory-2"
+                  className="appearance-none rounded-full border border-line bg-ink-3/60 py-2.5 pl-8 pr-8 text-[12.5px] font-semibold text-white"
                 >
                   <option value="def">Renditja</option>
                   <option value="asc">Çmimi: ulët → lartë</option>
