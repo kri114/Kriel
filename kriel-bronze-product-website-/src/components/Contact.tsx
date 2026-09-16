@@ -99,7 +99,7 @@ export default function Contact() {
                   <input
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    placeholder="p.sh. Arben Krasniqi"
+                    placeholder="Emri juaj"
                     className="w-full rounded-xl border border-line bg-ink-3/60 px-4 py-3 text-[14px] text-ivory placeholder:text-ivory-2/35 transition-colors"
                   />
                 </label>
