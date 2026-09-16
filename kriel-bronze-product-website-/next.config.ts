@@ -11,6 +11,7 @@ import type { NextConfig } from "next";
  * are made at request time.
  */
 const nextConfig: NextConfig = {
+  output: "export",
   images: {
     unoptimized: true,
   },
