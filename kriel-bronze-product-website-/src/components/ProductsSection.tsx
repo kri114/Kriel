@@ -115,7 +115,7 @@ export default function ProductsSection({
           <Reveal delay={0.14}>
             <p className="mx-auto mt-4 max-w-xl text-[14.5px] leading-relaxed text-ivory-2/80 font-light">
               Fillojmë me produktet më të kërkuara — shtypni &ldquo;Shfaq më shumë&rdquo; për të parë
-              gjithë katalogun, kategori pas kategorie. Çmimet janë orientuese, me TVSH të përfshirë.
+              gjithë katalogun, kategori pas kategorie. Këto çmime janë vetëm për porositë bëra nga kjo faqe, me TVSH të përfshirë.
             </p>
           </Reveal>
         </div>
