@@ -19,6 +19,7 @@ import type { NextConfig } from "next";
  * scripts/serve-static.mjs); `npm run dev` runs the Next.js dev server.
  */
 const nextConfig: NextConfig = {
+  output: "export",
   images: {
     unoptimized: true,
   },
