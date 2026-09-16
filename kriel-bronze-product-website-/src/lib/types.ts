@@ -1,0 +1,83 @@
+export type Category = {
+  id: number;
+  slug: string;
+  name: string;
+  description: string;
+  image: string;
+  sortOrder: number;
+};
+
+/** A priced color×size combination. Empty string = "standard" dimension. */
+export type ProductVariant = {
+  color: string;
+  size: string;
+  price: number;
+  pricePerCharacter?: number;
+  code?: string;
+};
+
+export type Product = {
+  id: number;
+  categoryId: number | null;
+  name: string;
+  code: string;
+  colorCodes?: Record<string, string>;
+  colorImages?: Record<string, string[]>;
+  price: number;
+  dims: string;
+  material: string;
+  description: string;
+  image: string;
+  images: string[];
+  sizes: string[];
+  colors: string[];
+  variants: ProductVariant[];
+  salePct: number;
+  sortOrder: number;
+  featured: boolean;
+  featuredOrder: number;
+  customizable: boolean;
+  active: boolean;
+  setName?: string | null;
+  setNames: string[];
+};
+
+export type CartItem = {
+  productId: number;
+  name: string;
+  code: string;
+  price: number;
+  textPricePerCharacter?: number;
+  image: string;
+  qty: number;
+  customText: string;
+  size: string;
+  color: string;
+};
+
+export type OrderItemPayload = {
+  productId: number;
+  name: string;
+  code: string;
+  price: number;
+  textPricePerCharacter?: number;
+  qty: number;
+  customText: string;
+  size: string;
+  color: string;
+};
+
+export type OrderStatus = "e_re" | "konfirmuar" | "perfunduar" | "anulluar";
+
+export type Order = {
+  id: number;
+  customerName: string;
+  phone: string;
+  address: string;
+  notes: string;
+  items: OrderItemPayload[];
+  total: number;
+  status: OrderStatus;
+  emailSent: boolean;
+  createdAt: string;
+};
